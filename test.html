@@ -126,7 +126,7 @@ td:first-child{color:var(--mute);width:38%}
 .heart{border:0;background:#fff;color:var(--ink);width:30px;height:30px;border-radius:50%;font-size:17px;line-height:1;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25)}
 .heart.on,.share.on{color:#d6336c}
 .ph .heart{position:absolute;top:6px;left:6px}
-.favbtn{margin-right:auto;border:0;background:var(--tile);color:var(--ink);border-radius:16px;height:32px;padding:0 12px;font:inherit;font-size:13px;cursor:pointer}
+.favbtn{margin-right:0;border:0;background:var(--tile);color:var(--ink);border-radius:16px;height:32px;padding:0 12px;font:inherit;font-size:13px;cursor:pointer}
 .ago{color:var(--mute);font-size:13px;font-weight:normal;margin-right:8px}
 .actions{display:flex;gap:8px;margin-top:8px}
 .actions .call{flex:1;padding:10px 0;font-size:14px;border:0;font-family:inherit;cursor:pointer}
@@ -191,6 +191,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,.thumbs img:focus-visib
 .a-err{background:#3a1717;color:#ffb4ab;border-radius:10px;padding:10px 12px;font-size:14px;margin-top:14px}
 .a-ok{background:#16301d;color:#b8f0c4;border-radius:10px;padding:10px 12px;font-size:14px;margin-top:14px}
 .a-err[hidden],.a-ok[hidden]{display:none}
+.a-link[hidden]{display:none}
 .a-go{width:100%;height:50px;margin-top:18px;border:0;border-radius:12px;background:var(--sign);color:#111;font:inherit;font-size:17px;font-weight:bold;cursor:pointer}
 .a-go:disabled{opacity:.6}
 .a-bot{margin-top:28px;padding:18px 20px 26px;border-top:1px solid #26282d;text-align:center;font-size:14px;color:#b6bbc3}
@@ -200,6 +201,84 @@ a:focus-visible,button:focus-visible,input:focus-visible,.thumbs img:focus-visib
 .rules ol,.rules ul{padding-right:20px}
 .rules li{margin:6px 0;font-size:14.5px}
 .rules .soft{font-size:12px;color:var(--mute);margin-top:16px}
+
+
+/* ---- v9 ---- */
+.favbtn{margin-right:0}
+.logo{margin-right:auto}
+.fi.ltr,.ph-box input{direction:ltr;text-align:left}
+.phone{display:flex;direction:ltr;align-items:stretch;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.phone b{display:flex;align-items:center;padding:0 12px;background:var(--tile);font-size:16px;border-right:1px solid var(--line)}
+.phone input{flex:1;min-width:0;border:0;height:46px;padding:0 12px;font:inherit;font-size:16px;direction:ltr;text-align:left;background:#fff}
+.phone input:focus{outline:2px solid var(--sign);outline-offset:-2px}
+.psub{font-size:13px;color:var(--mute);margin:0 0 8px}
+.dnote{background:var(--tile);border-radius:12px;padding:12px;font-size:13.5px;line-height:1.9;margin:4px 0 12px}
+.dnote b{display:block;font-size:15px;margin-bottom:2px}
+.dwarn{background:#fff6dc;border:1px solid #ecd48a;border-radius:12px;padding:12px;font-size:13.5px;line-height:1.9;margin:4px 0 12px}
+.me-row{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
+.me-row span{color:var(--mute)}
+.me-row b{direction:ltr;word-break:break-all;text-align:left;font-weight:normal}
+.me-btn{display:block;width:100%;height:48px;margin-top:12px;border-radius:12px;border:1.5px solid var(--ink);background:none;color:var(--ink);font:inherit;font-size:16px;cursor:pointer}
+.me-btn.red{border-color:#c0392b;color:#c0392b}
+.me-del{border:1.5px solid #c0392b;border-radius:12px;padding:12px;margin-top:14px;font-size:14px;line-height:1.9}
+.me-del .go{display:block;width:100%;height:46px;margin-top:10px;border:0;border-radius:10px;background:#c0392b;color:#fff;font:inherit;font-size:16px;cursor:pointer}
+.me-del .go:disabled{opacity:.45}
+/* login page */
+.a-tabs{display:flex;gap:0;margin:22px 0 4px;border:1px solid #3a3d44;border-radius:12px;overflow:hidden}
+.a-tabs button{flex:1;height:46px;border:0;background:none;color:#b6bbc3;font:inherit;font-size:16px;cursor:pointer}
+.a-tabs button.on{background:#e6bd55;color:#1a1405;font-weight:bold}
+.a-pw{position:relative}
+.a-pw .a-i{padding-left:46px}
+.a-eye{position:absolute;left:6px;top:0;height:48px;width:40px;border:0;background:none;color:#9aa0aa;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.a-eye svg{width:22px;height:22px}
+.a-eye.on{color:#e6bd55}
+.a-go{background:#e6bd55}
+.a-warn{font-size:12.5px;color:#e6bd55;text-align:center;margin-top:12px;min-height:18px}
+.a-rules{width:100%;max-width:420px;margin:0 auto;padding:26px 26px 10px}
+.a-rules h1{font-size:22px;margin:6px 0 10px}
+.a-rules .rules{color:#e8eaee}
+.a-rules .rules li{font-size:14.5px;line-height:1.95}
+.a-rules .rules h2{font-size:17px}
+.a-rules .soft{color:#9aa0aa}
+.a-rules .a-c{margin-top:22px}
+.a-go.dim{background:#6b5a2a;color:#cbbf9a}
+.a-wait{display:flex;flex-direction:column;align-items:center;text-align:center;padding:34px 24px 40px;flex:1;max-width:380px;margin:0 auto;width:100%}
+.a-spin{width:58px;height:58px;border-radius:50%;border:6px solid #2a2c31;border-top-color:#e6bd55;border-right-color:#fff;border-bottom-color:#000;animation:aspin 1s linear infinite;margin:auto 0 0}
+@keyframes aspin{to{transform:rotate(360deg)}}
+.a-wt{font-size:16px;line-height:2;margin-top:28px}
+.a-ws{font-size:13px;color:#9aa0aa;margin-top:8px;direction:ltr;word-break:break-all}
+.a-wb{margin:auto 0 0;padding-top:30px;display:flex;flex-direction:column;gap:4px;align-items:center}
+@media (prefers-reduced-motion:reduce){.a-spin{animation-duration:2.4s}}
+/* admin v9 */
+.a-nav{display:flex;gap:6px;margin:10px 0 12px}
+.a-nav button{flex:1;height:40px;border:1px solid #2c2e34;border-radius:10px;background:#17181b;color:#b6bbc3;font:inherit;font-size:14px;cursor:pointer}
+.a-nav button.on{background:#e6bd55;color:#1a1405;border-color:#e6bd55;font-weight:bold}
+.a-mini{display:grid;grid-template-columns:repeat(5,1fr);gap:5px;margin-bottom:8px}
+.a-mini button{background:#17181b;border:1.5px solid #26282d;border-radius:8px;padding:6px 2px 5px;color:#fff;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1px;min-width:0}
+.a-mini .n{display:flex;align-items:center;gap:3px;font-size:15px;font-weight:bold;direction:ltr}
+.a-mini .n svg{width:11px;height:11px;color:#9aa0aa;flex:none}
+.a-mini .t{font-size:10.5px;color:#b6bbc3;white-space:nowrap}
+.a-mini button.warn .n{color:#e6bd55}
+.a-mini button.on{border-color:#e6bd55}
+.a-st{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.a-stc{background:#17181b;border:1px solid #26282d;border-radius:12px;padding:12px;text-align:center}
+.a-stc b{display:block;font-size:26px;direction:ltr}
+.a-stc span{font-size:12.5px;color:#b6bbc3}
+.a-chart{background:#17181b;border:1px solid #26282d;border-radius:12px;padding:12px;margin-top:8px}
+.a-chart h3{font-size:14px;margin:0 0 10px;color:#fff}
+.a-bars{display:flex;align-items:flex-end;gap:6px;height:90px;direction:ltr}
+.a-bars div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:10.5px;color:#b6bbc3}
+.a-bars i{display:block;width:100%;background:#e6bd55;border-radius:4px 4px 0 0;min-height:2px}
+.a-us{background:#17181b;border:1px solid #26282d;border-radius:12px;padding:10px;margin-top:8px}
+.a-us .m{direction:ltr;text-align:left;font-size:14px;word-break:break-all;color:#fff}
+.a-us .d{font-size:12px;color:#9aa0aa;margin-top:2px}
+.a-us .b{display:flex;gap:6px;margin-top:8px}
+.a-us .b a,.a-us .b button{flex:1;text-align:center;text-decoration:none;border:1px solid #333;background:none;color:#ddd;border-radius:8px;padding:7px 4px;font:inherit;font-size:13px;cursor:pointer}
+.a-us .b .red{border-color:#7a2b2b;color:#ffb4ab}
+.a-subnav{display:flex;gap:6px;margin-bottom:6px}
+.a-subnav button{flex:1;height:36px;border:1px solid #2c2e34;border-radius:8px;background:none;color:#b6bbc3;font:inherit;font-size:13px;cursor:pointer}
+.a-subnav button.on{border-color:#e6bd55;color:#e6bd55}
+.a-search{width:100%;height:42px;border-radius:10px;border:1px solid #2c2e34;background:#17181b;color:#fff;padding:0 12px;font:inherit;font-size:15px;direction:ltr;text-align:left;margin-bottom:8px}
 
 .adm-on{background:#0a0a0b;color:#fff}
 .adm-on .bar{background:#0a0a0b}
@@ -246,7 +325,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,.thumbs img:focus-visib
 .a-rej{display:block;width:100%;text-align:right;padding:13px 12px;border:1px solid var(--line);background:#fff;border-radius:12px;font:inherit;font-size:16px;margin-top:8px;color:var(--ink);cursor:pointer}
 .a-rep{background:#17181b;border:1px solid #26282d;border-radius:14px;padding:12px;margin-top:10px;font-size:14px}
 .a-rep .a-sec button{min-width:0}
-.a-info svg{width:14px;height:14px;vertical-align:-2px}
 </style>
 </head>
 <body>
@@ -255,6 +333,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,.thumbs img:focus-visib
     <div class="row">
       <button class="menubtn" id="menubtn" type="button" aria-label="منو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
       <button class="backbtn" id="back" aria-label="بازگشت" hidden>&lt;</button>
+      
+      <button class="favbtn" id="favbtn" type="button" aria-label="ذخیره‌شده‌ها">♥ <span id="favn">۰</span></button>
       <a class="logo" href="#" data-go="/" aria-label="Yamora"><svg class="mark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
   <defs>
     <linearGradient id="y_tile" x1="0" y1="0" x2="0" y2="1">
@@ -306,7 +386,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,.thumbs img:focus-visib
   <ellipse cx="44.6" cy="20.6" rx="4.2" ry="2.6" fill="#fff" fill-opacity="0.75" transform="rotate(-28 44.6 20.6)"/>
 </svg>
 <span class="en">Yamora</span></a>
-      <button class="favbtn" id="favbtn" type="button" aria-label="ذخیره‌شده‌ها">♥ <span id="favn">۰</span></button>
     </div>
     <div class="search" id="sf">
       <input id="q" placeholder="جستجوی خانه، منطقه..." aria-label="جستجو">
@@ -418,6 +497,13 @@ const ERR = {
   'Unable to validate email':'ایمیل را درست بنویس.',
   email_address_invalid:'این ایمیل قبول نشد. ایمیل دیگری بنویس.',
   bad_report:'موضوع گزارش درست نیست.',
+  banned:'حساب شما مسدود شده است.',
+  blocked:'حساب شما مسدود شده است.',
+  'not confirmed':'ایمیلت هنوز تأیید نشده. روی «ارسال دوباره ایمیل تأیید» بزن.',
+  email_not_confirmed:'ایمیلت هنوز تأیید نشده. روی «ارسال دوباره ایمیل تأیید» بزن.',
+  'only request this once':'کمی صبر کن (حدود یک دقیقه) و دوباره بزن.',
+  'should be different':'رمز تازه باید با رمز قبلی فرق داشته باشد.',
+  same_password:'رمز تازه باید با رمز قبلی فرق داشته باشد.',
   'Database error saving':'این ایمیل قبول نیست. یک ایمیل واقعی بنویس.',
   fake_email:'این ایمیل قبول نیست. یک ایمیل واقعی بنویس.',
   too_many:'خیلی شماره دیدی. کمی بعد دوباره امتحان کن.',
@@ -492,14 +578,13 @@ function toast(msg){
 
 // ---- فیلتر و مرتب‌سازی ----
 let sortBy='new', fRooms=0, fArea='';
-const SORTS=[['new','تازه‌ترین'],['cheap','ارزان‌ترین'],['exp','گران‌ترین']];
+const SORTS=[['new','تازه‌ترین'],['old','قدیمی‌ترین']];
 const ROOMS=[[0,'همه'],[1,'۱ اتاق'],[2,'۲ اتاق'],[3,'۳ اتاق'],[4,'۴ اتاق یا بیشتر']];
 function applyFilters(r){
   if(fRooms) r = r.filter(h => fRooms>=4 ? h.rooms>=4 : h.rooms===fRooms);
   if(fArea) r = r.filter(h => h.area===fArea);
   r = r.slice();
-  if(sortBy==='cheap') r.sort((a,b)=>a.amount-b.amount);
-  else if(sortBy==='exp') r.sort((a,b)=>b.amount-a.amount);
+  if(sortBy==='old') r.sort((a,b)=>b.days-a.days);
   else r.sort((a,b)=>a.days-b.days);
   return r;
 }
@@ -671,13 +756,11 @@ const CAM = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
 
 const MONTH_LIMIT = 3;       // هر شماره در ۳۰ روز حداکثر ۳ آگهی تازه
 const AD_DAYS = 30;         // هر آگهی ۳۰ روز نمایش داده می‌شود؛ بعد باید تمدید شود
+const NO_PRICE = 'قیمت با تماس';
 const TYPE_SPEC = {
-  'کرایی': {label:'کرایه یک ماه (افغانی)', hint:'فقط کرایه یک ماه را بنویس.',
-    extra:[{k:'aud', l:'مناسب برای', opts:['خانواده','مجرد','هر دو'], def:'خانواده'}, {k:'dep', l:'تضمین یا پیش‌پرداخت (اختیاری)', text:'مثلاً یک ماه کرایه'}]},
-  'گروی': {label:'مبلغ گروی (افغانی)', hint:'مبلغی که گیرنده خانه می‌دهد و در پایان مدت پس می‌گیرد.',
-    extra:[{k:'dur', l:'مدت گروی', opts:['۶ ماه','۱ سال','۲ سال','توافقی'], def:'۱ سال'}]},
-  'فروشی': {label:'قیمت فروش (افغانی)', hint:'قیمت کامل فروش را بنویس.',
-    extra:[{k:'doc', l:'نوع سند', opts:['سند رسمی','قباله شرعی','سند دیگر'], def:'سند رسمی'}, {k:'sqm', l:'مساحت زمین به متر مربع (اختیاری)', text:'مثلاً ۲۰۰', num:true}, {k:'neg', l:'قیمت قابل گفتگو است؟', opts:['بله','نه'], def:'بله'}]}
+  'کرایی': {extra:[{k:'aud', l:'مناسب برای', opts:['خانواده','مجرد','هر دو'], def:'خانواده'}]},
+  'گروی': {extra:[{k:'aud', l:'مناسب برای', opts:['خانواده','مجرد','هر دو'], def:'خانواده'}, {k:'dur', l:'مدت گروی', opts:['۶ ماه','۱ سال','۲ سال','توافقی'], def:'۱ سال'}]},
+  'فروشی': {extra:[{k:'doc', l:'نوع سند', opts:['سند رسمی','قباله شرعی','سند دیگر'], def:'سند رسمی'}, {k:'cond', l:'وضعیت خانه', opts:['نوساز','قابل سکونت','نیاز به ترمیم'], def:'قابل سکونت'}, {k:'sqm', l:'مساحت زمین به متر مربع (اختیاری)', text:'مثلاً ۲۰۰', num:true}]}
 };
 function xfields(type){
   return TYPE_SPEC[type].extra.map(f => f.opts
@@ -693,17 +776,17 @@ function readExtras(type){
   return out;
 }
 function parseAmount(t){ return parseInt(toLatin(t).replace(/\D/g,''), 10); }
-function priceText(type, amount){ return thousands(amount) + ' افغانی' + (type==='کرایی' ? ' در ماه' : type==='گروی' ? ' گروی' : ''); }
+
 function loadLog(){ try{ return JSON.parse(localStorage.getItem('ads_log')||'[]'); }catch(e){ return []; } }
 function usedThisMonth(phone){ const lim = Date.now() - 30*86400000; return loadLog().filter(x => x.phone === phone && x.t > lim); }
 
 function postPage(){
   const same = a => a.map(x=>[x,x]);
   return `<h1 style="margin-bottom:4px">ثبت آگهی</h1>
-  <div class="sub">رایگان است. فقط خانه (کرایی، گروی، فروشی) و فقط عکس خود خانه. آگهی بعد از بررسی نمایش داده می‌شود. <a class="lnk" href="#" data-go="/mine" style="margin:0">آگهی‌های من</a></div>
+  <div class="sub">ثبت آگهی رایگان است. فقط خانهٔ خودتان (کرایی، گروی، فروشی) را می‌توانید ثبت کنید. آگهی بعد از بررسی نمایش داده می‌شود.</div>
 
   <h2 class="sec2">عکس‌ها</h2>
-  <div class="sub">تا ${fa(MAX_PHOTOS)} عکس. عکس اول، عکس اصلی است.</div>
+  <div class="sub">شما می‌توانید حداکثر ${fa(MAX_PHOTOS)} عکس انتخاب کنید. عکس را از بیرون خانه بگیرید تا مشتری راحت‌تر خانه را پیدا کند.</div>
   <div id="pwrap"></div>
   <div class="hint" id="photoMsg"></div>
   <label class="lnk" for="fCam">یا با دوربین عکس بگیر</label>
@@ -711,22 +794,20 @@ function postPage(){
   <input type="file" id="fCam" class="vh" accept="image/*" capture="environment">
 
   <h2 class="sec2">درباره خانه</h2>
-  <div class="field"><span class="lbl">نوع آگهی</span>${group('type', same(TABS), 'کرایی', 'seg')}</div>
-  <div class="field"><label for="fTitle">عنوان</label><input class="fi" id="fTitle" maxlength="60" placeholder="مثلاً خانه ۲ اتاقه با حویلی"><div class="hint">همان جمله‌ای که بالای آگهی در لیست دیده می‌شود. کوتاه و روشن بنویس: چند اتاق، چه ویژگی.</div></div>
-  <div class="field"><span class="lbl">منطقه</span><div class="fixed">${AREA}</div></div>
-  <div class="field"><label for="fAddr">کوچه</label><input class="fi" id="fAddr" maxlength="90" placeholder="مثلاً کوچه ۱۲، نزدیک مسجد"></div>
+  <div class="field"><span class="lbl">نوع خانه</span>${group('type', same(TABS), 'کرایی', 'seg')}</div>
+  <div class="field"><label for="fTitle">عنوان</label><input class="fi" id="fTitle" maxlength="25" placeholder="مثلاً خانه ۲ اتاقه با حویلی"></div>
+  <div class="field"><span class="lbl">منطقه</span><div class="fixed">🔒 ${AREA}</div></div>
+  <div class="field"><label for="fAddr">آدرس</label><input class="fi" id="fAddr" maxlength="50" placeholder="مثلاً کوچه ۱۲، نزدیک مسجد"></div>
   <div class="field"><span class="lbl">تعداد اتاق</span>${group('rooms', [1,2,3,4,5,6].map(n=>[n,fa(n)]), 2, 'chips sel')}</div>
   <div class="field"><span class="lbl">طبقه</span>${group('floor', same(['همکف','اول','دوم','سوم','بالاتر']), 'همکف', 'chips sel')}</div>
   <div class="field"><span class="lbl">آب</span>${group('water', same(['نل','چاه','ندارد']), 'نل', 'chips sel')}</div>
   <div class="field"><span class="lbl">برق</span>${group('power', same(['دارد','ندارد']), 'دارد', 'chips sel')}</div>
-  <div class="field"><label for="fNote">توضیحات (اختیاری)</label><textarea class="fi" id="fNote" maxlength="300" placeholder="مثلاً خانواده‌گی، حویلی دارد..."></textarea></div>
-
-  <h2 class="sec2" id="priceSec">قیمت و شرایط</h2>
-  <div class="field"><label for="fPrice" id="priceLbl">${TYPE_SPEC['کرایی'].label}</label><input class="fi" id="fPrice" inputmode="numeric" placeholder="مثلاً ۶٬۰۰۰"><div class="hint" id="priceHint">${TYPE_SPEC['کرایی'].hint}</div></div>
   <div id="xfields">${xfields('کرایی')}</div>
+  <div class="field"><label for="fNote">توضیحات (اختیاری)</label><input class="fi" id="fNote" maxlength="30" placeholder="مثلاً حویلی دارد"></div>
 
   <h2 class="sec2">تماس</h2>
-  <div class="field"><label for="fPhone">شماره تماس</label><input class="fi" id="fPhone" inputmode="tel" maxlength="14" placeholder="۰۷۹۱۲۳۴۵۶۷"></div>
+  <div class="field"><label for="fPhone">شماره تماس</label><div class="psub">لطفاً شمارهٔ خود یا صاحب‌خانه را وارد کنید.</div>
+  <div class="phone"><b>+93</b><input id="fPhone" inputmode="numeric" maxlength="10" autocomplete="tel-national"></div></div>
   <label class="check"><input type="checkbox" id="fOwner"><span>این خانه مال خودم است، یا صاحب‌خانه اجازه داده آگهی‌اش را بگذارم.</span></label>
   <input id="fHp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;top:0;right:0;width:1px;height:1px;opacity:0;pointer-events:none">
 
@@ -824,15 +905,13 @@ async function submitAd(){
   const type = gv('type');
   const title = v('fTitle');
   if(title.length < 5) return showErr('عنوان را بنویس (حداقل ۵ حرف).');
+  if(title.length > 25) return showErr('عنوان حداکثر ۲۵ حرف باشد.');
   if(BAD_TITLE.test(title)) return showErr('فقط آگهی خانه قبول می‌شود. عنوان را درست کن.');
   const address = v('fAddr');
-  if(address.length < 3) return showErr('کوچه را بنویس.');
-  const amount = parseAmount(v('fPrice'));
-  if(!amount || amount < 500) return showErr('قیمت را درست بنویس.');
-  if(amount > 2000000000) return showErr('قیمت خیلی بزرگ است.');
-  let phone = toLatin(v('fPhone')).replace(/[\s\-]/g,'').replace(/^\+93/,'0').replace(/^0093/,'0');
+  if(address.length < 3) return showErr('آدرس را بنویس.');
+  let phone = toLatin(v('fPhone')).replace(/\D/g,'');
   if(/^7\d{8}$/.test(phone)) phone = '0' + phone;
-  if(!/^07\d{8}$/.test(phone)) return showErr('شماره تماس درست نیست. مثل ۰۷۹۱۲۳۴۵۶۷ بنویس.');
+  if(!/^07\d{8}$/.test(phone)) return showErr('شماره تماس درست نیست. بعد از +93 نُه رقم بنویس، مثل ۷۹۱۲۳۴۵۶۷.');
   if(!$('fOwner').checked) return showErr('باید تأیید کنی که خانه مال خودت است یا صاحب‌خانه اجازه داده.');
   const btn = $('fSubmit'); btn.disabled = true; btn.textContent = 'در حال فرستادن...';
   const up = [];
@@ -848,7 +927,7 @@ async function submitAd(){
     }
     btn.textContent = 'ثبت آگهی...';
     await rpc('create_ad', {p_kind:type, p_title:title, p_address:address, p_rooms:+gv('rooms'), p_floor:gv('floor'), p_water:gv('water'), p_power:gv('power'),
-      p_amount:amount, p_price_text:priceText(type, amount), p_note:v('fNote'), p_extras:readExtras(type), p_photos:up.map(n => SB + '/storage/v1/object/public/ad-photos/' + n), p_phone:phone});
+      p_amount:0, p_price_text:NO_PRICE, p_note:v('fNote'), p_extras:readExtras(type), p_photos:up.map(n => SB + '/storage/v1/object/public/ad-photos/' + n), p_phone:phone});
     showSent(); loadAds();
   }catch(e){
     delPhotos(up);
@@ -865,10 +944,7 @@ function showSent(){
 }
 function initPost(){
   postPhotos = []; drawPhotos();
-  $('fPrice').addEventListener('input', () => {
-    const d = toLatin($('fPrice').value).replace(/\D/g,'');
-    $('fPrice').value = d ? thousands(parseInt(d,10)) : '';
-  });
+  $('fPhone').addEventListener('input', () => { $('fPhone').value = toLatin($('fPhone').value).replace(/\D/g,'').slice(0,10); });
   $('pwrap').addEventListener('click', e => {
     const r = e.target.closest('[data-rm]');
     if(r){ postPhotos.splice(+r.dataset.rm, 1); drawPhotos(); $('photoMsg').textContent = ''; }
@@ -883,8 +959,7 @@ function onGroupClick(e){
   const b = e.target.closest('button'); if(!b || !g.contains(b)) return;
   g.querySelectorAll('button').forEach(x => x.classList.toggle('on', x === b));
   if(g.dataset.g === 'type' && $('xfields')){
-    const sp = TYPE_SPEC[b.dataset.v];
-    $('priceLbl').textContent = sp.label; $('priceHint').textContent = sp.hint; $('xfields').innerHTML = xfields(b.dataset.v);
+    $('xfields').innerHTML = xfields(b.dataset.v);
   }
 }
 
@@ -929,34 +1004,31 @@ function initMine(){
 function editPage(id){
   const a = (mineList||[]).find(x => x.id === id);
   if(!a) return '<div class="empty">این آگهی پیدا نشد.<br><a class="lnk" href="#" data-go="/mine">آگهی‌های من</a></div>';
-  const amt = String(a.amount);
   return `<h1 style="margin-bottom:4px">ویرایش آگهی</h1>
   <div class="sub">نوع آگهی، شماره تماس و عکس‌ها قابل تغییر نیستند. برای تغییر عکس، آگهی تازه بگذار.${isAdmin ? '' : ' بعد از ویرایش، آگهی دوباره بررسی می‌شود.'}</div>
-  <div class="field"><label for="eTitle">عنوان</label><input class="fi" id="eTitle" maxlength="60" value="${esc(a.title)}"></div>
-  <div class="field"><label for="eAddr">کوچه</label><input class="fi" id="eAddr" maxlength="90" value="${esc(a.address)}"></div>
-  <div class="field"><label for="ePrice">${TYPE_SPEC[a.type].label}</label><input class="fi" id="ePrice" inputmode="numeric" value="${thousands(amt)}"></div>
-  <div class="field"><label for="eNote">توضیحات</label><textarea class="fi" id="eNote" maxlength="300">${esc(a.note||'')}</textarea></div>
+  <div class="field"><label for="eTitle">عنوان</label><input class="fi" id="eTitle" maxlength="25" value="${esc(a.title)}"></div>
+  <div class="field"><label for="eAddr">آدرس</label><input class="fi" id="eAddr" maxlength="50" value="${esc(a.address)}"></div>
+  <div class="field"><label for="eNote">توضیحات</label><input class="fi" id="eNote" maxlength="30" value="${esc(a.note||'')}"></div>
   <div class="sbar"><div class="err" id="formErr" hidden style="margin-top:0"></div><button type="button" class="call btn" id="eSave">ذخیره تغییرها</button></div>`;
 }
 function initEdit(id){
   if(!$('eSave')) return;
-  $('ePrice').addEventListener('input', () => { const d = toLatin($('ePrice').value).replace(/\D/g,''); $('ePrice').value = d ? thousands(parseInt(d,10)) : ''; });
   $('eSave').onclick = async () => {
     const a = (mineList||[]).find(x => x.id === id); if(!a) return;
-    const title = $('eTitle').value.trim(), address = $('eAddr').value.trim(), amount = parseAmount($('ePrice').value);
+    const title = $('eTitle').value.trim(), address = $('eAddr').value.trim();
     if(title.length < 5) return showErr('عنوان را بنویس (حداقل ۵ حرف).');
     if(BAD_TITLE.test(title)) return showErr('فقط آگهی خانه قبول می‌شود. عنوان را درست کن.');
-    if(address.length < 3) return showErr('کوچه را بنویس.');
-    if(!amount || amount < 500 || amount > 2000000000) return showErr('قیمت را درست بنویس.');
+    if(address.length < 3) return showErr('آدرس را بنویس.');
     $('eSave').disabled = true; $('eSave').textContent = 'در حال ذخیره...';
     try{
-      await rpc('update_ad', {p_id:id, p_title:title, p_address:address, p_amount:amount, p_price_text:priceText(a.type, amount), p_note:$('eNote').value.trim()});
+      await rpc('update_ad', {p_id:id, p_title:title, p_address:address, p_amount:a.amount || 0, p_price_text:a.price || NO_PRICE, p_note:$('eNote').value.trim()});
       hist.pop(); cur = '/mine'; route(0); loadAds();
     }catch(e){ showErr(errMsg(e)); $('eSave').disabled = false; $('eSave').textContent = 'ذخیره تغییرها'; }
   };
 }
 
 // ================= پنل مدیر =================
+let adminTab = 'ads', adminUsers = null, adminStats = null, usersSub = 'active', usersQ = '', adminTabBusy = false;
 let adminList = null, adminFilter = 'pending', adminOwners = {}, adminReps = [], adminView = null, rejTarget = null;
 const REJ_REASONS = ['عکس خانه نیست','شماره یا قیمت نادرست است','آدرس ناقص است','آگهی تکراری است','قوانین را رعایت نکرده'];
 function adminPage(){
@@ -1006,21 +1078,64 @@ function admViewHtml(){
   <div class="a-sec">${q ? '<button type="button" data-act="skip">بعداً</button>' : ''}${a.status === 'approved' ? '<button type="button" data-act="rented">تمام شد</button>' : ''}<button type="button" class="red" data-act="del">پاک کردن</button></div>
   <div class="a-bar">${bar}</div>`;
 }
+const IC = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+const A_IC = {pending:IC('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'), approved:IC('<path d="M5 12.5l4.5 4.5L19 7.5"/>'), rejected:IC('<path d="M6 6l12 12M18 6L6 18"/>'), rented:IC('<path d="M4 11l8-7 8 7v9H4z"/>'), reports:IC('<path d="M6 21V4M6 5h11l-2 4 2 4H6"/>')};
+const dFmt = x => String(x || '').slice(0, 10);
+function admUserList(){
+  const q = usersQ.trim().toLowerCase();
+  const l = adminUsers.filter(u => (usersSub === 'ban' ? u.banned : !u.banned) && (!q || String(u.email).toLowerCase().includes(q)));
+  return l.length ? l.map(u => `<div class="a-us"><div class="m">${esc(u.email)}</div>
+    <div class="d">ثبت‌نام: ${dFmt(u.created_at)} · آگهی: ${u.ads}${u.is_adm ? ' · مدیر' : ''}</div>
+    <div class="b"><a href="mailto:${esc(u.email)}">ایمیل</a>${u.is_adm ? '' : `<button type="button" class="${u.banned ? '' : 'red'}" data-ub="${esc(u.id)}" data-bl="${u.banned ? 0 : 1}">${u.banned ? 'رفع مسدودیت' : '🚫 مسدود'}</button>`}</div></div>`).join('')
+    : '<div class="a-empty">کاربری پیدا نشد.</div>';
+}
+function admUsersHtml(){
+  if(!adminUsers) return '<div class="a-empty">در حال بارگیری...</div>';
+  const nb = adminUsers.filter(u => u.banned).length;
+  return `<div class="a-subnav"><button type="button" data-us="active" class="${usersSub === 'active' ? 'on' : ''}">فعال (${adminUsers.length - nb})</button><button type="button" data-us="ban" class="${usersSub === 'ban' ? 'on' : ''}">مسدود (${nb})</button></div>
+  <input class="a-search" id="uQ" type="search" placeholder="جستجوی ایمیل" value="${esc(usersQ)}"><div id="uList">${admUserList()}</div>`;
+}
+function admStatsHtml(){
+  const t = adminStats; if(!t) return '<div class="a-empty">در حال بارگیری...</div>';
+  const c = admCounts(), days = t.days || [], mx = Math.max(1, ...days.map(x => x.n));
+  return `<div class="a-st">
+    <div class="a-stc"><b>${t.today}</b><span>بازدید امروز</span></div>
+    <div class="a-stc"><b>${t.month}</b><span>بازدید ۳۰ روز اخیر</span></div>
+    <div class="a-stc"><b>${t.users}</b><span>کاربران ثبت‌نام‌شده</span></div>
+    <div class="a-stc"><b>${t.blocked}</b><span>مسدودشده</span></div>
+    <div class="a-stc"><b>${c.approved}</b><span>آگهی فعال</span></div>
+    <div class="a-stc"><b>${c.pending}</b><span>در انتظار بررسی</span></div></div>
+  <div class="a-chart"><h3>بازدید ۷ روز اخیر</h3><div class="a-bars">${days.map(x => `<div><span>${x.n}</span><i style="height:${Math.max(2, Math.round(x.n / mx * 64))}px"></i><span>${String(x.d).slice(5)}</span></div>`).join('')}</div></div>`;
+}
+function admEnsure(){
+  if(adminTabBusy || adminTab === 'ads') return;
+  const need = adminTab === 'users' ? !adminUsers : !adminStats; if(!need) return;
+  adminTabBusy = true;
+  rpc(adminTab === 'users' ? 'admin_users' : 'admin_stats').then(r => { if(adminTab === 'users') adminUsers = r || []; else adminStats = r; })
+    .catch(e => { toast(errMsg(e)); if(adminTab === 'users') adminUsers = []; else adminStats = {today:0, month:0, users:0, blocked:0, days:[]}; })
+    .finally(() => { adminTabBusy = false; drawAdmin(); });
+}
 function drawAdmin(){
   const box = $('admBox'); if(!box || !adminList) return;
   if(adminView){ box.innerHTML = admViewHtml(); window.scrollTo(0, 0); return; }
-  const c = admCounts();
-  const cards = [['pending','در انتظار',c.pending,1],['approved','فعال',c.approved,0],['rejected','رد شده',c.rejected,0],['rented','تمام‌شده',c.rented,0],['reports','گزارش‌ها',c.reports,1]];
   let h = `<div class="a-top"><h1>پنل مدیر</h1><button type="button" class="a-ref" id="aRef">تازه‌سازی</button></div>
-  <div class="a-cards">${cards.map(([k,t,n,w]) => `<button type="button" data-af="${k}" class="a-card ${w && n ? 'warn' : ''} ${adminFilter === k ? 'on' : ''}"><b>${fa(n)}</b><span>${t}</span></button>`).join('')}</div>`;
-  if(adminFilter === 'pending' && c.pending) h += `<button type="button" class="a-start" id="aStart">شروع بررسی (${fa(c.pending)} آگهی)</button>`;
-  if(adminFilter === 'reports') h += admRepsHtml();
-  else { const l = adminList.filter(a => a.status === adminFilter).sort((x,y) => adminFilter === 'pending' ? new Date(x.created) - new Date(y.created) : new Date(y.created) - new Date(x.created)); h += admRows(l); }
+  <div class="a-nav">${[['ads','آگهی‌ها'],['users','کاربران'],['stats','آمار']].map(([k,t]) => `<button type="button" data-at="${k}" class="${adminTab === k ? 'on' : ''}">${t}</button>`).join('')}</div>`;
+  if(adminTab === 'ads'){
+    const c = admCounts();
+    const cards = [['pending','در انتظار',c.pending,1],['approved','فعال',c.approved,0],['rejected','رد شده',c.rejected,0],['rented','تمام‌شده',c.rented,0],['reports','گزارش‌ها',c.reports,1]];
+    h += `<div class="a-mini">${cards.map(([k,t,n,w]) => `<button type="button" data-af="${k}" class="${w && n ? 'warn' : ''} ${adminFilter === k ? 'on' : ''}"><span class="n">${A_IC[k]}${n}</span><span class="t">${t}</span></button>`).join('')}</div>`;
+    if(adminFilter === 'pending' && c.pending) h += `<button type="button" class="a-start" id="aStart">شروع بررسی (${c.pending} آگهی)</button>`;
+    if(adminFilter === 'reports') h += admRepsHtml();
+    else { const l = adminList.filter(a => a.status === adminFilter).sort((x,y) => adminFilter === 'pending' ? new Date(x.created) - new Date(y.created) : new Date(y.created) - new Date(x.created)); h += admRows(l); }
+  } else if(adminTab === 'users') h += admUsersHtml();
+  else h += admStatsHtml();
   h += `<div class="a-foot"><a href="#" data-go="/post">ثبت آگهی (مدیر)</a><button type="button" id="aOut">خروج</button></div>`;
   box.innerHTML = h;
+  admEnsure();
 }
 async function loadAdmin(){
   const s = await getSess(false); if(!s) throw {code:'JWT'};
+  adminUsers = null; adminStats = null;
   adminList = (await raw('/rest/v1/ads?select=' + COLS + ',reject_reason&order=created_at.desc&limit=300', {token:s.at})).map(mapRow);
   try{ const o = await raw('/rest/v1/rpc/admin_owner_emails', {method:'POST', body:{}, token:s.at}); adminOwners = {}; (o || []).forEach(x => { adminOwners[x.ad] = x; }); }catch(e){ adminOwners = {}; }
   try{ adminReps = await raw('/rest/v1/reports?select=id,ad,reason,details,created_at&handled=eq.false&order=created_at.desc&limit=50', {token:s.at}); }catch(e){ adminReps = []; }
@@ -1051,9 +1166,18 @@ function initAdmin(){
       if(adminView && adminView.id === id) admAdvance(); else drawAdmin();
     }catch(err){ toast(errMsg(err)); }
   };
+  $('app').oninput = e => { if(e.target.id === 'uQ'){ usersQ = e.target.value; const L = $('uList'); if(L && adminUsers) L.innerHTML = admUserList(); } };
   $('app').onclick = async e => {
     if(e.target.closest('#aOut')){ saveSess(null); adminList = null; adminView = null; closeDrawer(); hist = []; cur = '/'; route(0); loadAds(); return; }
     if(e.target.closest('#aRef')){ reload(); return; }
+    const at = e.target.closest('[data-at]'); if(at){ adminTab = at.dataset.at; drawAdmin(); return; }
+    const us = e.target.closest('[data-us]'); if(us){ usersSub = us.dataset.us; drawAdmin(); return; }
+    const ub = e.target.closest('[data-ub]');
+    if(ub){
+      if(ub.dataset.armed !== '1'){ ub.dataset.armed = '1'; ub.textContent = 'مطمئنی؟ دوباره بزن'; return; }
+      try{ const bl = ub.dataset.bl === '1'; await rpc('admin_block_user', {p_user:ub.dataset.ub, p_block:bl}); const u = (adminUsers || []).find(x => x.id === ub.dataset.ub); if(u) u.banned = bl; toast(bl ? 'مسدود شد.' : 'مسدودیت برداشته شد.'); loadAdmin().then(drawAdmin).catch(() => drawAdmin()); drawAdmin(); }catch(err){ toast(errMsg(err)); }
+      return;
+    }
     const f = e.target.closest('[data-af]'); if(f){ adminFilter = f.dataset.af; drawAdmin(); return; }
     if(e.target.closest('#aStart')){ const q = adminList.filter(a => a.status === 'pending').sort((x,y) => new Date(x.created) - new Date(y.created)).map(a => a.id); if(q.length){ adminView = {id:q[0], queue:q}; drawAdmin(); } return; }
     const op = e.target.closest('[data-open]'); if(op){ adminView = {id:op.dataset.open, queue:null}; drawAdmin(); return; }
@@ -1106,24 +1230,25 @@ function route(scrollTo, animate){
   if((NEEDS_LOGIN.test(cur) && !isUser()) || (cur==='/admin' && !isAdmin)) cur = '/';
   const p = cur.split('/'); // ["", "c", "house"]
   const isList = p[1]==='c';
-  $('app').innerHTML = isList ? list(p[2]) : p[1]==='h' ? detail(p[2]) : p[1]==='f' ? favPage() : p[1]==='post' ? postPage() : p[1]==='rules' ? rulesPage() : p[1]==='mine' ? minePage() : p[1]==='edit' ? editPage(p[2]) : p[1]==='admin' ? adminPage() : p[1]==='report' ? reportPage(p[2]) : home();
+  $('app').innerHTML = isList ? list(p[2]) : p[1]==='h' ? detail(p[2]) : p[1]==='f' ? favPage() : p[1]==='post' ? postPage() : p[1]==='rules' ? rulesPage() : p[1]==='mine' ? minePage() : p[1]==='edit' ? editPage(p[2]) : p[1]==='admin' ? adminPage() : p[1]==='report' ? reportPage(p[2]) : p[1]==='me' ? mePage() : home();
   if(p[1]==='post') initPost();
   if(p[1]==='mine') initMine();
   if(p[1]==='edit') initEdit(p[2]);
   if(p[1]==='admin') initAdmin();
   if(p[1]==='report') initReport(p[2]);
+  if(p[1]==='me') initMe();
   if(p[1]==='h'){ const hh = houses.find(x => x.id === p[2]); if(hh) countView(hh.id); }
   document.body.classList.toggle('adm-on', p[1]==='admin' && isAdmin);
   $('back').hidden = cur==='/';
   $('tabs').hidden = !isList;
-  $('sf').hidden = ['h','f','post','rules','mine','edit','admin','report'].includes(p[1]);
+  $('sf').hidden = ['h','f','post','rules','mine','edit','admin','report','me'].includes(p[1]);
   refreshHearts();
   document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on', b.dataset.tab===tab));
   const ap = $('app'); ap.classList.remove('anim','slide-next','slide-prev');
   if(animate){ void ap.offsetWidth; ap.classList.add(animate==='next' ? 'slide-next' : animate==='prev' ? 'slide-prev' : 'anim'); }
   window.scrollTo(0, scrollTo||0);
 }
-const NEEDS_LOGIN = /^\/(post|mine|edit)/;
+const NEEDS_LOGIN = /^\/(post|mine|edit|me)/;
 function go(path){
   if((NEEDS_LOGIN.test(path) && !isUser()) || (path==='/admin' && !isAdmin)){ openAuth(path); return; }
   hist.push({cur, y:window.scrollY}); cur = path; route(0, true);
@@ -1256,86 +1381,238 @@ function initReport(id){
 }
 
 // ================= ورود و ایجاد حساب =================
-let authMode = 'login', authNext = '', authTerms = false, authMail = '';
-function openAuth(next){
-  authNext = next || ''; authMode = 'login'; drawAuth(); $('auth').hidden = false; document.body.style.overflow = 'hidden'; closeDrawer();
+let authMode = 'login', authNext = '', authTerms = false, authMail = '', resetTok = null;
+const siteBase = () => (location.protocol === 'file:' || !location.origin || location.origin === 'null') ? '' : location.origin + location.pathname.replace(/index\.html$/, '');
+const redir = () => { const b = siteBase(); return b ? '?redirect_to=' + encodeURIComponent(b) : ''; };
+let authStage = 'form', authPend = null, authPoll = null;
+function authStop(){ if(authPoll){ clearInterval(authPoll); authPoll = null; } }
+function showAuth(mode, info, needResend){ authMode = mode; authStage = 'form'; authStop(); drawAuth(info, needResend); $('auth').hidden = false; document.body.style.overflow = 'hidden'; closeDrawer(); }
+function openAuth(next){ authNext = next || ''; showAuth('login'); }
+function closeAuth(){ authStop(); authStage = 'form'; authPend = null; $('auth').hidden = true; document.body.style.overflow = ''; }
+const fillBrand = () => { const mk = document.querySelector('.logo .mark'); const b = $('aBrand'); if(b && mk) b.appendChild(mk.cloneNode(true)); };
+const MAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+async function loginDone(d, mail, home){
+  let adm = false;
+  try{ adm = (await raw('/rest/v1/rpc/is_admin', {method:'POST', body:{}, token:d.access_token})) === true; }catch(e){}
+  saveSess(mkSess(d, adm, true, mail)); mineList = null; adminList = null; adminUsers = null; adminStats = null;
+  authStop(); authStage = 'form'; authPend = null;
+  const n = authNext; authNext = ''; closeAuth(); loadAds();
+  if(home){ hist = []; cur = '/'; route(0); } else if(n) go(n); else route(window.scrollY);
 }
-function closeAuth(){ $('auth').hidden = true; document.body.style.overflow = ''; }
-function drawAuth(info){
-  const su = authMode === 'signup';
+function drawAuth(info, needResend){
+  if(authStage === 'rules') return drawAuthRules();
+  if(authStage === 'wait') return drawAuthWait();
+  const m = authMode, su = m === 'signup', fg = m === 'forgot', rs = m === 'reset', lg = m === 'login';
+  const tabs = (lg || su) ? `<div class="a-tabs"><button type="button" data-m="login" class="${lg ? 'on' : ''}">ورود</button><button type="button" data-m="signup" class="${su ? 'on' : ''}">ساخت حساب</button></div>` : '';
+  const title = fg ? '<h1 class="a-h">بازیابی رمز</h1>' : rs ? '<h1 class="a-h">رمز تازه</h1>' : '';
+  const sub = lg ? 'برای ثبت آگهی‌های خود وارد شوید.' : su ? 'برای ثبت آگهی، یک حساب بسازید.'
+    : fg ? 'ایمیل حسابتان را بنویسید. اگر حساب داشته باشد، لینک تغییر رمز برایش فرستاده می‌شود.' : 'رمز تازه‌تان را بنویسید.';
+  const btn = lg ? 'ورود' : su ? 'ادامه' : fg ? 'فرستادن لینک' : 'ذخیرهٔ رمز و ورود';
   $('auth').innerHTML = `<button type="button" class="a-x" id="aX" aria-label="بستن">×</button>
   <div class="a-in">
     <div class="a-brand" id="aBrand"></div>
     <div class="a-name">Yamora</div>
-    <div class="a-fa">یامورا · اجاره و خرید خانه</div>
-    <h1 class="a-h">${su ? 'ایجاد حساب' : 'ورود به حساب'}</h1>
-    <p class="a-p">${su ? 'با حساب خودت از هر گوشی می‌توانی وارد شوی و آگهی‌هایت را مرتب کنی.' : 'برای ثبت آگهی و دیدن آگهی‌های خودت وارد شو.'}</p>
+    <div class="a-fa">یامورا · راهی برای پیدا کردن خانه</div>
+    ${tabs}${title}
+    <p class="a-p" style="margin-top:14px">${sub}</p>
     <form id="aForm" novalidate>
-      <label class="a-l" for="aE">ایمیل</label>
-      <input class="a-i" id="aE" type="email" inputmode="email" autocomplete="username" autocapitalize="off" spellcheck="false" value="${esc(authMail)}">
-      <label class="a-l" for="aP">رمز عبور</label>
-      <input class="a-i" id="aP" type="password" autocomplete="${su ? 'new-password' : 'current-password'}">
-      ${su ? `<label class="a-l" for="aP2">تکرار رمز عبور</label><input class="a-i" id="aP2" type="password" autocomplete="new-password">
-      <div class="a-hint">حداقل ۸ حرف. رمز را جایی یادداشت کن؛ فعلاً بازیابی رمز نداریم.</div>` : ''}
-      <label class="a-show"><input type="checkbox" id="aShow"><span>نمایش رمز</span></label>
-      <label class="a-c"><input type="checkbox" id="aT" ${authTerms ? 'checked' : ''}><span>قوانین را خوانده‌ام و آن را می‌پذیرم.</span></label>
-      <button type="button" class="a-link" id="aRules">دیدن قوانین</button>
+      ${rs ? `<p class="a-p" style="direction:ltr;text-align:left">${esc(authMail)}</p>` : `<label class="a-l" for="aE">ایمیل</label>
+      <input class="a-i" id="aE" type="email" inputmode="email" autocomplete="username" autocapitalize="off" spellcheck="false" value="${esc(authMail)}">`}
+      ${fg ? '' : `<label class="a-l" for="aP">${rs ? 'رمز تازه' : 'رمز عبور'}</label>
+      <div class="a-pw"><input class="a-i" id="aP" type="password" autocomplete="${lg ? 'current-password' : 'new-password'}"><button type="button" class="a-eye" id="aEye" aria-label="نمایش رمز">${EYE}</button></div>
+      ${(su || rs) ? '<div class="a-hint">لطفاً حداقل رمز ۸ حرفی وارد کنید و برای بازیابی حسابتان آن را جای امن نگهداری کنید.</div>' : ''}`}
+      ${lg ? '<button type="button" class="a-link" id="aForgot" style="padding-right:0">رمز را فراموش کرده‌ام</button>' : ''}
       <div class="a-ok" id="aOk" ${info ? '' : 'hidden'}>${esc(info || '')}</div>
       <div class="a-err" id="aErr" hidden></div>
-      <button type="submit" class="a-go" id="aGo">${su ? 'ایجاد حساب' : 'ورود'}</button>
+      <button type="button" class="a-link" id="aResend" ${needResend ? '' : 'hidden'} style="padding-right:0">ارسال دوباره ایمیل تأیید</button>
+      <button type="submit" class="a-go" id="aGo">${btn}</button>
+      ${(fg || rs) ? '<button type="button" class="a-link" id="aBack" style="padding-right:0">بازگشت به ورود</button>' : ''}
     </form>
-  </div>
-  <div class="a-bot"><span>${su ? 'قبلاً حساب ساخته‌ای؟' : 'حساب نداری؟'}</span><button type="button" class="a-sw" id="aSw">${su ? 'ورود' : 'ایجاد حساب'}</button></div>`;
-  const m = document.querySelector('.logo .mark'); if(m) $('aBrand').appendChild(m.cloneNode(true));
+  </div>`;
+  fillBrand();
   const err = t => { $('aErr').textContent = t; $('aErr').hidden = !t; if(t) $('aOk').hidden = true; };
+  const mailNow = () => ($('aE') ? $('aE').value.trim().toLowerCase() : authMail);
   $('aX').onclick = closeAuth;
-  $('aRules').onclick = () => { $('rulesBody').innerHTML = rulesHtml(); $('rulesSheet').hidden = false; };
-  $('aShow').onchange = () => { const t = $('aShow').checked ? 'text' : 'password'; $('aP').type = t; if($('aP2')) $('aP2').type = t; };
-  $('aT').onchange = () => { authTerms = $('aT').checked; };
-  $('aSw').onclick = () => { authMail = $('aE').value.trim(); authMode = su ? 'login' : 'signup'; drawAuth(); };
+  document.querySelectorAll('.a-tabs button').forEach(b => { b.onclick = () => { if(b.dataset.m === authMode) return; authMail = mailNow(); showAuth(b.dataset.m); }; });
+  if($('aEye')) $('aEye').onclick = () => { const on = $('aP').type === 'password'; $('aP').type = on ? 'text' : 'password'; $('aEye').classList.toggle('on', on); };
+  if($('aForgot')) $('aForgot').onclick = () => { authMail = mailNow(); showAuth('forgot'); };
+  if($('aBack')) $('aBack').onclick = () => { authMail = mailNow(); showAuth('login'); };
+  $('aResend').onclick = async () => {
+    const mail = mailNow(); err('');
+    if(!MAIL_RE.test(mail)) return err('ایمیل را درست بنویسید.');
+    $('aResend').disabled = true;
+    try{
+      await raw('/auth/v1/resend' + redir(), {method:'POST', body:{type:'signup', email:mail}});
+      $('aOk').textContent = 'ایمیل تأیید دوباره فرستاده شد. (پوشهٔ اسپم را هم ببینید)'; $('aOk').hidden = false; $('aErr').hidden = true;
+    }catch(e){ err(errMsg(e)); }
+    setTimeout(() => { if($('aResend')) $('aResend').disabled = false; }, 30000);
+  };
   $('aForm').onsubmit = async ev => {
     ev.preventDefault(); err('');
-    const mail = $('aE').value.trim().toLowerCase(), pass = $('aP').value; authMail = mail;
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(mail)) return err('ایمیل را درست بنویس.');
-    if(!pass) return err('رمز عبور را بنویس.');
-    if(su){
-      if(pass.length < 8) return err('رمز باید حداقل ۸ حرف باشد.');
-      if(pass !== $('aP2').value) return err('رمز و تکرار آن یکی نیست.');
+    const mail = mailNow(); authMail = mail;
+    if(!rs && !MAIL_RE.test(mail)) return err('ایمیل را درست بنویسید.');
+    const btnEl = $('aGo'), label = btnEl.textContent;
+    if(fg){
+      btnEl.disabled = true; btnEl.textContent = 'لحظه...';
+      try{
+        await raw('/auth/v1/recover' + redir(), {method:'POST', body:{email:mail}});
+        $('aOk').textContent = 'اگر این ایمیل حساب دارد، لینک تغییر رمز فرستاده شد. (پوشهٔ اسپم را هم ببینید)'; $('aOk').hidden = false;
+      }catch(e){ err(errMsg(e)); }
+      setTimeout(() => { if($('aGo')){ $('aGo').disabled = false; $('aGo').textContent = label; } }, 30000);
+      return;
     }
-    if(!$('aT').checked) return err('برای ادامه باید قوانین را بپذیری.');
-    const btn = $('aGo'); btn.disabled = true; btn.textContent = 'لحظه...';
+    const pass = $('aP').value;
+    if(!pass) return err('رمز عبور را بنویسید.');
+    if((su || rs) && pass.length < 8) return err('رمز باید حداقل ۸ حرف باشد.');
+    if(su){ authPend = {mail, pass}; authStage = 'rules'; drawAuth(); return; }
+    btnEl.disabled = true; btnEl.textContent = 'لحظه...';
     try{
-      let d, adm = false;
-      if(su){
-        d = await raw('/auth/v1/signup', {method:'POST', body:{email:mail, password:pass, data:{terms_accepted:true, terms_at:new Date().toISOString()}}});
-        if(!d || !d.access_token){ authMode = 'login'; drawAuth('حساب ساخته شد. ایمیلت را (پوشهٔ اسپم را هم) باز کن و روی لینک تأیید بزن، بعد وارد شو.'); return; }
-      } else {
-        d = await raw('/auth/v1/token?grant_type=password', {method:'POST', body:{email:mail, password:pass}});
-        try{ adm = (await raw('/rest/v1/rpc/is_admin', {method:'POST', body:{}, token:d.access_token})) === true; }catch(e){}
-      }
-      saveSess(mkSess(d, adm, true, mail)); mineList = null; adminList = null;
-      const n = authNext; authNext = ''; closeAuth(); loadAds();
-      if(n) go(n); else route(window.scrollY);
-    }catch(e){ err(errMsg(e)); btn.disabled = false; btn.textContent = su ? 'ایجاد حساب' : 'ورود'; }
+      let d;
+      if(rs){
+        await raw('/auth/v1/user', {method:'PUT', body:{password:pass}, token:resetTok.at});
+        d = {access_token:resetTok.at, refresh_token:resetTok.rt, expires_at:resetTok.exp, user:{id:resetTok.uid}};
+        resetTok = null; toast('رمز تازه ذخیره شد ✓');
+      } else d = await raw('/auth/v1/token?grant_type=password', {method:'POST', body:{email:mail, password:pass}});
+      await loginDone(d, mail, false);
+    }catch(e){
+      err(errMsg(e)); btnEl.disabled = false; btnEl.textContent = label;
+      if(/not.?confirmed/i.test(String((e && e.code) || ''))) $('aResend').hidden = false;
+    }
   };
+}
+function drawAuthRules(){
+  authStop();
+  $('auth').innerHTML = `<button type="button" class="a-x" id="aX" aria-label="بستن">×</button>
+  <div class="a-rules">
+    <div class="a-brand" id="aBrand"></div><div class="a-name">Yamora</div>
+    <h1>قوانین یامورا</h1>
+    <div class="rules">${rulesHtml()}</div>
+    <label class="a-c"><input type="checkbox" id="aT"><span>من قوانین یامورا را خوانده‌ام و با آن موافقت می‌کنم.</span></label>
+    <div class="a-warn" id="aW"></div>
+    <div class="a-err" id="aErr" hidden></div>
+    <button type="button" class="a-go dim" id="aGo">ایجاد حساب</button>
+    <button type="button" class="a-link" id="aBk" style="padding-right:0">بازگشت</button>
+  </div>`;
+  fillBrand();
+  $('aX').onclick = closeAuth;
+  $('aBk').onclick = () => { authStage = 'form'; authMode = 'signup'; authMail = authPend ? authPend.mail : ''; drawAuth(); };
+  $('aT').onchange = () => { $('aGo').classList.toggle('dim', !$('aT').checked); if($('aT').checked) $('aW').textContent = ''; };
+  $('aGo').onclick = async () => {
+    if(!$('aT').checked){ $('aW').textContent = 'برای ساختن حساب لطفاً قوانین را خوانده و با آن موافقت کنید.'; return; }
+    const {mail, pass} = authPend, b = $('aGo'); b.disabled = true; b.textContent = 'لحظه...';
+    try{
+      const d = await raw('/auth/v1/signup' + redir(), {method:'POST', body:{email:mail, password:pass, data:{terms_accepted:true, terms_at:new Date().toISOString()}}});
+      if(d && d.access_token){ await loginDone(d, mail, true); return; }
+      authStage = 'wait'; drawAuth();
+    }catch(e){ $('aErr').textContent = errMsg(e); $('aErr').hidden = false; b.disabled = false; b.textContent = 'ایجاد حساب'; }
+  };
+}
+function drawAuthWait(){
+  const {mail, pass} = authPend;
+  $('auth').innerHTML = `<button type="button" class="a-x" id="aX" aria-label="بستن">×</button>
+  <div class="a-wait">
+    <div class="a-brand" id="aBrand"></div><div class="a-name">Yamora</div>
+    <div class="a-spin" role="status" aria-label="در انتظار تأیید"></div>
+    <div class="a-wt">پوشهٔ اسپم ایمیل خود را ببینید و حساب را تأیید کنید.</div>
+    <div class="a-ws">${esc(mail)}</div>
+    <div class="a-ok" id="aOk" hidden style="margin-top:16px"></div>
+    <div class="a-wb"><button type="button" class="a-link" id="aResend" style="padding:6px 0">ارسال دوباره ایمیل</button>
+    <button type="button" class="a-link" id="aBk" style="padding:6px 0">ایمیل را اشتباه نوشتم یا قبلاً حساب دارم</button></div>
+  </div>`;
+  fillBrand();
+  $('aX').onclick = closeAuth;
+  $('aBk').onclick = () => { authStop(); authStage = 'form'; authMode = 'login'; authMail = mail; drawAuth(); };
+  $('aResend').onclick = async () => {
+    $('aResend').disabled = true;
+    try{ await raw('/auth/v1/resend' + redir(), {method:'POST', body:{type:'signup', email:mail}}); $('aOk').textContent = 'ایمیل دوباره فرستاده شد.'; $('aOk').hidden = false; }
+    catch(e){ $('aOk').textContent = errMsg(e); $('aOk').hidden = false; }
+    setTimeout(() => { if($('aResend')) $('aResend').disabled = false; }, 30000);
+  };
+  // اگر لینک ایمیل در جای دیگری باز شد، همین‌جا هم خودکار وارد می‌شویم
+  authStop(); let n = 0;
+  authPoll = setInterval(async () => {
+    if(++n > 100 || $('auth').hidden || authStage !== 'wait'){ authStop(); return; }
+    try{
+      const d = await raw('/auth/v1/token?grant_type=password', {method:'POST', body:{email:mail, password:pass}});
+      if(d && d.access_token){ authStop(); toast('ایمیلت تأیید شد ✓'); await loginDone(d, mail, true); }
+    }catch(e){}
+  }, 6000);
+}
+// لینک‌های ایمیل (تأیید ثبت‌نام، بازیابی رمز) با اطلاعات در آدرس به سایت برمی‌گردند
+async function handleAuthHash(){
+  const h = location.hash.replace(/^#/, ''); if(!h || h.indexOf('=') < 0) return;
+  const p = new URLSearchParams(h);
+  const clean = () => { try{ history.replaceState(null, '', location.pathname + location.search); }catch(e){} };
+  if(p.get('error')){
+    clean(); authMail = ''; showAuth('login', 'این لینک قدیمی شده یا قبلاً استفاده شده. ایمیلت را بنویس و «ارسال دوباره ایمیل تأیید» را بزن، یا اگر تأیید شده، وارد شو.', true); return;
+  }
+  const at = p.get('access_token'); if(!at) return;
+  const type = p.get('type'); clean();
+  try{
+    const u = await raw('/auth/v1/user', {token:at});
+    const mail = String(u.email || '').toLowerCase();
+    const sx = {at:at, rt:p.get('refresh_token') || '', exp:Math.floor(Date.now()/1000) + (+p.get('expires_in') || 3600), uid:u.id, admin:false, acct:true, mail:mail};
+    if(type === 'recovery'){ resetTok = sx; authMail = mail; authNext = ''; showAuth('reset'); return; }
+    try{ sx.admin = (await raw('/rest/v1/rpc/is_admin', {method:'POST', body:{}, token:at})) === true; }catch(e){}
+    saveSess(sx); toast('ایمیلت تأیید شد ✓ وارد شدی.'); authStop(); authStage = 'form'; authPend = null; closeAuth(); hist = []; cur = '/'; route(0); loadAds();
+  }catch(e){ toast(errMsg(e)); }
 }
 
 // ================= منوی کناری =================
 function drawDrawer(){
   const u = isUser();
-  $('dnav').innerHTML = `
+  $('dnav').innerHTML = (u
+    ? `<div class="dnote"><b>یامورا؛ جایی برای پیدا کردن خانهٔ رویایی</b>یامورا فقط شما را به هم وصل می‌کند و در هیچ معامله‌ای دخالت ندارد.</div>`
+    : `<div class="dwarn">شما حساب ندارید. برای ثبت آگهی روی «ثبت آگهی و ورود» بزنید و مراحل را انجام دهید.</div>`) + `
   <button type="button" class="di dsub" id="dcat" aria-expanded="false"><span>دسته‌ها</span><span id="dcar">▾</span></button>
   <div id="dcatBox" hidden><a class="di sub" href="#" data-go="/c/house" data-reset="1">خانه</a><div class="dsoon">دسته‌های بیشتر به‌زودی</div></div>
-  <a class="di" href="#" data-go="/post" style="font-weight:bold">${u ? 'ثبت آگهی' : 'ثبت آگهی و ورود'}</a>
-  ${u ? '<a class="di" href="#" data-go="/mine">آگهی‌های من</a>' : ''}
+  <a class="di" href="#" data-go="/post" style="font-weight:bold">${u ? 'ثبت آگهی' : 'ثبت آگهی و ورود'}</a>` + (u ? `
+  <a class="di" href="#" data-go="/mine">آگهی‌های من</a>
   ${isAdmin ? '<a class="di" href="#" data-go="/admin">پنل مدیر</a>' : ''}
   <hr class="dline">
   <a class="di" href="#" data-go="/rules">قوانین و حریم خصوصی</a>
   <a class="di" href="#" data-go="/report">گزارش</a>
-  ${u ? `<hr class="dline"><div class="dmail">${esc(sess.mail || '')}</div><button type="button" class="di" data-logout="1">خروج از حساب</button>` : ''}`;
+  <hr class="dline">
+  <a class="di" href="#" data-go="/me">دربارهٔ من</a>` : '');
 }
 
+// ================= دربارهٔ من =================
+function mePage(){ return `<h1 style="margin-bottom:4px">دربارهٔ من</h1><div id="meBox"><div class="empty">در حال بارگیری...</div></div>`; }
+async function initMe(){
+  const box = $('meBox'); if(!box) return;
+  let u, n = 0;
+  try{
+    const s = await getSess(false); if(!s) throw {code:'JWT'};
+    u = await raw('/auth/v1/user', {token:s.at});
+    try{ await loadMine(); n = mineList.length; }catch(e){}
+  }catch(e){ box.innerHTML = '<div class="empty">' + esc(errMsg(e)) + '</div>'; return; }
+  box.innerHTML = `<div class="me-row"><span>ایمیل</span><b>${esc(u.email || sess.mail || '')}</b></div>
+  <div class="me-row"><span>تاریخ ثبت‌نام</span><b>${esc(String(u.created_at || '').slice(0, 10))}</b></div>
+  <div class="me-row"><span>تعداد آگهی‌ها</span><b>${n}</b></div>
+  <button type="button" class="me-btn" id="meOut">خروج از حساب</button>
+  ${isAdmin ? '' : `<button type="button" class="me-btn red" id="meDelOpen">حذف حساب</button>
+  <div class="me-del" id="meDel" hidden>با حذف حساب، همهٔ آگهی‌ها، عکس‌ها، ایمیل و رمز شما برای همیشه از سرور پاک می‌شود و برگشتی ندارد.
+    <label class="check" style="margin-top:8px"><input type="checkbox" id="meSure"><span>مطمئنم؛ حسابم پاک شود.</span></label>
+    <button type="button" class="go" id="meDelGo" disabled>حذف همیشگی حساب</button></div>`}`;
+  $('meOut').onclick = () => { saveSess(null); mineList = null; adminList = null; closeDrawer(); hist = []; cur = '/'; route(0); loadAds(); toast('از حساب خارج شدید.'); };
+  if($('meDelOpen')){
+    $('meDelOpen').onclick = () => { $('meDel').hidden = !$('meDel').hidden; };
+    $('meSure').onchange = () => { $('meDelGo').disabled = !$('meSure').checked; };
+    $('meDelGo').onclick = async () => {
+      const b = $('meDelGo'); b.disabled = true; b.textContent = 'در حال پاک کردن...';
+      try{
+        await delPhotos((mineList || []).flatMap(a => a.photos.map(photoName)));
+        await rpc('delete_my_account');
+        saveSess(null); mineList = null; adminList = null; hist = []; cur = '/'; route(0); loadAds();
+        toast('حساب و همهٔ اطلاعاتتان پاک شد.');
+      }catch(e){ toast(errMsg(e)); b.disabled = false; b.textContent = 'حذف همیشگی حساب'; }
+    };
+  }
+}
+
+try{ if(!sessionStorage.getItem('sv')){ sessionStorage.setItem('sv', '1'); raw('/rest/v1/rpc/count_site_view', {method:'POST', body:{}}).catch(() => {}); } }catch(e){}
 route(0);
+handleAuthHash();
 loadAds().then(() => { if(!/^\/(post|mine|edit|admin|rules|report)/.test(cur)) route(window.scrollY); });
 </script>
 </body>
